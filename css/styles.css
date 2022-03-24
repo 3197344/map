@@ -1,0 +1,302 @@
+/* -----------------btn call------------------------- */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(41, 8, 8);
+}
+li {
+  text-decoration: none;
+  list-style: none;
+}
+.container {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  padding: 0, 15px;
+
+  /* background-image: url(../img/map2.svg); */
+  /* background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; */
+}
+
+/* ------------------points-------------------------- */
+.box-marker {
+  position: absolute;
+width: 1000px;
+height: 1000px;
+top: 0;
+  
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.marker {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  /* border: 2px solid tomato; */
+  background-color:  rgb(131, 6, 6);
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+}
+.marker:nth-child(1) {
+  background-color: rgb(131, 6, 6);
+  top: 512px;
+  left: 184px;
+}
+.marker:nth-child(2) {
+  background-color: rgb(131, 6, 6);
+  top: 788px;
+  left: 681px;
+}
+.marker:nth-child(3) {
+  background-color: rgb(131, 6, 6);
+  top: 662px;
+  left: 470px;
+}
+.marker:nth-child(4) {
+  background-color: rgb(131, 6, 6);
+  top: 635px;
+  left: 582px;
+}
+.marker:nth-child(5) {
+  background-color: rgb(131, 6, 6);
+  top: 601px;
+  left: 543px;
+}
+.marker:nth-child(6) {
+  background-color: rgb(131, 6, 6);
+  top: 464px;
+  left: 551px;
+}
+.marker:nth-child(7) {
+  background-color: rgb(131, 6, 6);
+  top: 380px;
+  left: 533px;
+}
+.marker:nth-child(8) {
+  background-color: rgb(131, 6, 6);
+  top: 502px;
+  left: 724px;
+}
+.marker:nth-child(9) {
+  background-color: rgb(131, 6, 6);
+  top: 443px;
+  left: 711px;
+}
+.marker:nth-child(10) {
+  background-color: rgb(131, 6, 6);
+  top: 453px;
+  left: 877px;
+}
+.marker:nth-child(11) {
+  background-color: rgb(131, 6, 6);
+  top: 387px;
+  left: 956px;
+}
+.marker:nth-child(12) {
+  background-color: rgb(131, 6, 6);
+  top: 284px;
+  left: 765px;
+}
+.marker:nth-child(13) {
+  background-color: rgb(131, 6, 6);
+  top: 327px;
+  left: 676px;
+}
+.marker:nth-child(14) {
+  background-color: rgb(131, 6, 6);
+  top: 200px;
+  left: 677px;
+}
+.marker:nth-child(15) {
+  background-color: rgb(131, 6, 6);
+  top: 167px;
+  left: 479px;
+}
+.marker:nth-child(16) {
+  background-color: rgb(131, 6, 6);
+  top: 250px;
+  left: 442px;
+}
+.marker:nth-child(17) {
+  background-color: rgb(131, 6, 6);
+  top: 266px;
+  left: 340px;
+}
+.marker:nth-child(18) {
+  background-color: rgb(131, 6, 6);
+  top: 345px;
+  left: 330px;
+}
+.marker:nth-child(19) {
+  background-color: rgb(131, 6, 6);
+  top: 329px;
+  left: 242px;
+}
+.marker:nth-child(20) {
+  background-color: rgb(131, 6, 6);
+  top: 307px;
+  left: 163px;
+}
+.marker:nth-child(21) {
+  background-color: rgb(131, 6, 6);
+  top: 212px;
+  left: 199px;
+}
+.marker:nth-child(22) {
+  background-color: rgb(131, 6, 6);
+  top: 196px;
+  left: 150px;
+}
+.marker:nth-child(23) {
+  background-color: rgb(131, 6, 6);
+  top: 262px;
+  left: 75px;
+}
+.marker:nth-child(24) {
+  background-color: rgb(131, 6, 6);
+  top: 341px;
+  left: 113px;
+}
+
+.marker:nth-child(25) {
+  background-color: rgb(131, 6, 6);
+  top: 355px;
+  left: -26px;
+}
+.marker::before,
+.marker::after {
+  content: "";
+  position: absolute;
+  border: 1px solid rgba(114, 16, 16, 0.096);
+  background-color:  rgba(245, 106, 106, 0.158);
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  animation: pulse 2s linear infinite;
+  opacity: 0;
+}
+.marker::after {
+  animation-delay: 0.5s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+/* ------------call btn */
+
+.dws {
+  position: absolute;
+  top: 95%;
+  left: 10%;
+  
+}
+
+.pulse,
+.bloc,
+.phone {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.bloc {
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+}
+.pulse {
+  background: #11af40;
+  position: relative;
+  transition: 0.5s;
+}
+
+.phone {
+  font-size: 50px;
+  line-height: 94px;
+  animation: phone 0.9s ease-in-out infinite;
+}
+.text {
+  position: absolute;
+  opacity: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  top: 28px;
+  font-size: 15px;
+  transform: scaleX(-1);
+  transition: 0.5s ease-in-out;
+}
+.phone i {
+  transition: 0.5s ease-in-out;
+}
+.pulse:hover {
+  background:  #11af40;
+}
+.pulse:hover i {
+  transition: 0.5s ease-in-out;
+  transform: scale(0);
+}
+.pulse:hover .text {
+  transform: scaleX(1);
+  transition: 0.5s ease-in-out;
+  opacity: 1;
+}
+.pulse:hover::before,
+.pulse:hover::after {
+  content: "";
+  position: absolute;
+  border: 1px solid  #11af40;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  animation: pulse 1.8s linear infinite;
+  opacity: 0;
+}
+.pulse:hover::after {
+  animation-delay: 0.5s;
+}
+
+@keyframes phone {
+  0%,
+  100% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(21deg);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
