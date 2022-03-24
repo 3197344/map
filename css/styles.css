@@ -24,10 +24,10 @@ li {
 /* ------------------points-------------------------- */
 .box-marker {
   position: absolute;
-width: 1000px;
-height: 1000px;
-top: 0;
-  
+  width: 1000px;
+  height: 1000px;
+  top: 0;
+
   background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -38,7 +38,7 @@ top: 0;
   width: 5px;
   height: 5px;
   /* border: 2px solid tomato; */
-  background-color:  rgb(131, 6, 6);
+  background-color: rgb(131, 6, 6);
   text-align: center;
   border-radius: 50%;
   position: relative;
@@ -174,7 +174,7 @@ top: 0;
   content: "";
   position: absolute;
   border: 1px solid rgba(114, 16, 16, 0.096);
-  background-color:  rgba(245, 106, 106, 0.158);
+  background-color: rgba(245, 106, 106, 0.158);
   left: -20px;
   right: -20px;
   top: -20px;
@@ -206,7 +206,6 @@ top: 0;
   position: absolute;
   top: 95%;
   left: 10%;
-  
 }
 
 .pulse,
@@ -250,7 +249,7 @@ top: 0;
   transition: 0.5s ease-in-out;
 }
 .pulse:hover {
-  background:  #11af40;
+  background: #11af40;
 }
 .pulse:hover i {
   transition: 0.5s ease-in-out;
@@ -265,7 +264,7 @@ top: 0;
 .pulse:hover::after {
   content: "";
   position: absolute;
-  border: 1px solid  #11af40;
+  border: 1px solid #11af40;
   left: -20px;
   right: -20px;
   top: -20px;
